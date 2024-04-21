@@ -38,9 +38,8 @@ productRouter.get("/api/productsbycategory/",  async (req, res) => {
   }
 });
 
-/*
 // Update a product by ID
-app.put('/api/products/:id', async (req, res) => {
+productRouter.put('/api/product/:id', async (req, res) => {
   const productId = req.params.id;
   const updateData = req.body;
 
@@ -55,4 +54,5 @@ app.put('/api/products/:id', async (req, res) => {
     res.status(500).json({ error: 'Internal Server Error' });
   }
 });
-*/
+
+module.exports = productRouter;
